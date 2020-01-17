@@ -68,6 +68,7 @@
             ) );
             ?>
             <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
+                <span style="flex:10;"></span>
             </div>
         </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
