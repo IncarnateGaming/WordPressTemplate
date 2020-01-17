@@ -31,6 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="inc-top-html">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'incarnatewordpress' ); ?></a>
 
@@ -56,6 +57,7 @@
 
 		<nav id="site-navigation" class="main-navigation">
             <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
+            <span class="top-button" id="top-button"></span>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'incarnatewordpress' ); ?></button>
 			<?php
 			wp_nav_menu( array(
@@ -63,7 +65,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-            <span class="top-button" id="top-button"></span>
+            <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
