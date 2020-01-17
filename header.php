@@ -60,13 +60,18 @@
             <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-primary inc-sticky-header">
                 <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
                 <span class="topButton" id="topButton"></span>
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
-                <?php
-                wp_nav_menu( array(
-                    'theme_location' => 'menu-1',
-                    'menu_id'        => 'primary-menu',
-                ) );
-                ?>
+<!--                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light">--><?php //esc_html_e( 'Menu', 'incarnatewordpress' ); ?><!--</button>-->
+                <div class="d-flex flex-column">
+                    <button class="navbar-toggler bg-secondary text-light ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                    ) );
+                    ?>
+                    </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
                 <span style="flex:10;"></span>
             </nav>
