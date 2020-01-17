@@ -36,29 +36,30 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'incarnatewordpress' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$incarnatewordpress_description = get_bloginfo( 'description', 'display' );
-			if ( $incarnatewordpress_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $incarnatewordpress_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+<!--		<div class="site-branding">-->
+<!--			--><?php
+//			the_custom_logo();
+//			if ( is_front_page() && is_home() ) :
+//				?>
+<!--				<h1 class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></h1>-->
+<!--				--><?php
+//			else :
+//				?>
+<!--				<p class="site-title"><a href="--><?php //echo esc_url( home_url( '/' ) ); ?><!--" rel="home">--><?php //bloginfo( 'name' ); ?><!--</a></p>-->
+<!--				--><?php
+//			endif;
+//			$incarnatewordpress_description = get_bloginfo( 'description', 'display' );
+//			if ( $incarnatewordpress_description || is_customize_preview() ) :
+//				?>
+<!--				<p class="site-description">--><?php //echo $incarnatewordpress_description; /* WPCS: xss ok. */ ?><!--</p>-->
+<!--			--><?php //endif; ?>
+<!--		</div>-->
+        <!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
             <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
             <span class="topButton" id="topButton"></span>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'incarnatewordpress' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

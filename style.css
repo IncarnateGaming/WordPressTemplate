@@ -1,3 +1,10 @@
+/*
+Custimization scripts
+ */
+nav div ul li a{
+	color:white;
+	padding-left:0.5rem;
+}
 /*!
 Theme Name: incarnateWordpress
 Theme URI: http://underscores.me/
