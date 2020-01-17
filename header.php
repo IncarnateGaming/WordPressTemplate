@@ -96,12 +96,12 @@
                         target.classList.remove('hidden');
                         target.style.display = 'none';
                     }
-                    function showHidePrimarymenu(forceType){
+                    function showHidePrimarymenu(ev,forceType){
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
                     if (window.innerWidth <= 992){
-                        showHidePrimarymenu('hide');
+                        showHidePrimarymenu(ev,'hide');
                     }
                 </script>
                 <span style="flex:10;"></span>
