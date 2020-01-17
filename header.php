@@ -31,7 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="inc-top-html">
+<div id="inc-top-html" class="container">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'incarnatewordpress' ); ?></a>
 
