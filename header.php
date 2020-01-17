@@ -62,7 +62,7 @@
                 <span class="topButton" id="topButton"></span>
 <!--                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light">--><?php //esc_html_e( 'Menu', 'incarnatewordpress' ); ?><!--</button>-->
                 <div class="d-flex flex-column">
-                    <button class="navbar-toggler bg-secondary text-light ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler bg-secondary text-light ml-auto" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="primaryMenuControl">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <?php
@@ -73,6 +73,23 @@
                     ?>
                     </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
+                <script>
+                    function showHideFlex(id){
+                        const target = document.getElementById(id);
+                        console.log(target,target.getAttribute('class'));
+                        if (target.getAttribute('class')!== undefined && target.getAttribute('class').includes('hidden')){
+                            target.classList.remove('hidden');
+                            target.style.display='none';
+                        }else{
+                            target.classList.add('hidden');
+                            target.style.display='flex';
+                        }
+                    }
+                    function showHidePrimarymenu(){
+                        showHideFlex('primary-menu');
+                    }
+                    document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
+                </script>
                 <span style="flex:10;"></span>
             </nav>
         </div>
