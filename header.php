@@ -62,6 +62,7 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
+            <span class="top-button"></span>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
