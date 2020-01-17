@@ -101,7 +101,7 @@
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
                     if (window.innerWidth <= 992){
-                        showHidePrimarymenu(ev,'hide');
+                        showHidePrimarymenu(undefined,'hide');
                     }
                 </script>
                 <span style="flex:10;"></span>

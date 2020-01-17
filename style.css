@@ -16,12 +16,16 @@ nav div ul li a:visited {
   color: #feffe2;
 }
 
-.vertical nav div ul {
+nav div ul {
   display: flex;
   flex-direction: column;
 }
 
-.vertical nav div ul a {
+.horizontal nav div ul {
+  flex-direction: row;
+}
+
+nav div ul a {
   flex: 0 0 auto;
 }
 
