@@ -34,8 +34,8 @@
         <link rel="stylesheet" href="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/style/incBootstrap.css">
         <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/policyAccept.js"></script>
         <script>
-            IncarnatePolicyAccept.policy = '/policy/8-website';
-            IncarnatePolicyAccept.reject = '/policy/9-reject';
+            IncarnatePolicyAccept.policy = '/blog/?page_id=23';
+            IncarnatePolicyAccept.reject = '/blog/?page_id=26';
         </script>
         <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/orientation.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

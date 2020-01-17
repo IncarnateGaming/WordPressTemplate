@@ -22,7 +22,7 @@
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/cookies.js"></script>
     <script>
         var incarnateDomain = '.incarnategamingllc.com';
-        var IncarnateCrossReferenceOveride = 'https://www.joomla.incarnategamingllc.com/index.php/10';
+        var IncarnateCrossReferenceOveride = 'https://www.wordpress.incarnategamingllc.com/blog/?page_id=33';
     </script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/hooks.js"></script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/ajax.js"></script>
@@ -56,20 +56,20 @@
 <!--		</div>-->
         <!-- .site-branding -->
 
-        <div id="navbar">
-            <nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light bg-primary inc-sticky-header">
-                <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
-                <span class="topButton" id="topButton"></span>
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
-                <?php
-                wp_nav_menu( array(
-                    'theme_location' => 'menu-1',
-                    'menu_id'        => 'primary-menu',
-                ) );
-                ?>
-                <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
-            </nav><!-- #site-navigation -->
-        </div>
+        <nav id="site-navigation" class="main-navigation navbar navbar-expand-lg navbar-light bg-primary inc-sticky-header">
+            <div id="navbar">
+            <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
+            <span class="topButton" id="topButton"></span>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+                'menu_id'        => 'primary-menu',
+            ) );
+            ?>
+            <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
+            </div>
+        </nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
