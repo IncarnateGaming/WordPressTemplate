@@ -31,7 +31,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="inc-top-html" class="container">
+<div id="inc-top-html">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'incarnatewordpress' ); ?></a>
 
@@ -69,4 +69,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">
