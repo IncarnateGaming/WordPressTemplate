@@ -27,6 +27,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'incarnatewordpress' ), 'incarnatewordpress', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?>
 		</div><!-- .site-info -->
+        <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
         <script>
             var IncarnateAnalyticsTag = 'UA-155417623-1';
         </script>
