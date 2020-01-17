@@ -62,7 +62,7 @@
                 <span class="topButton" id="topButton"></span>
 <!--                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light">--><?php //esc_html_e( 'Menu', 'incarnatewordpress' ); ?><!--</button>-->
                 <div class="d-flex flex-column">
-                    <button class="navbar-toggler bg-secondary text-light ml-auto" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="primaryMenuControl">
+                    <button class="navbar-toggler bg-secondary text-light mr-auto" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="primaryMenuControl">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <?php
