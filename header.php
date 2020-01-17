@@ -74,21 +74,35 @@
                     </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
                 <script>
-                    function showHideFlex(id){
+                    function showHideFlex(id,forceType){
                         const target = document.getElementById(id);
-                        console.log(target,target.getAttribute('class'));
-                        if (target.getAttribute('class')!== undefined && target.getAttribute('class').includes('hidden')){
-                            target.classList.remove('hidden');
-                            target.style.display='none';
-                        }else{
-                            target.classList.add('hidden');
-                            target.style.display='flex';
+                        if(forceType === undefined) {
+                            if (target.getAttribute('class') !== undefined && target.getAttribute('class').includes('hidden')) {
+                                showHideFlexHide(target);
+                            } else {
+                                showHideFlexShow(target);
+                            }
+                        }else if (forceType === 'show'){
+                            showHideFlexShow(target);
+                        }else if (forceType === 'hide'){
+                            showHideFlexHide(target);
                         }
                     }
-                    function showHidePrimarymenu(){
-                        showHideFlex('primary-menu');
+                    function showHideFlexShow(target){
+                        target.classList.add('hidden');
+                        target.style.display = 'flex';
+                    }
+                    function showHideFlexHide(target){
+                        target.classList.remove('hidden');
+                        target.style.display = 'none';
+                    }
+                    function showHidePrimarymenu(forceType){
+                        showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
+                    if (window.innerWidth <= 992){
+                        showHidePrimarymenu('hide');
+                    }
                 </script>
                 <span style="flex:10;"></span>
             </nav>
