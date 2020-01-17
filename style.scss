@@ -37,6 +37,12 @@ button.menu-toggle:hover{
 .container{
 	margin-top:4rem;
 }
+.horizontal .container{
+	margin-top:6rem;
+}
+.vertical .inc-flex-direction-orientation{
+	flex-direction: column;
+}
 /*!
 Theme Name: incarnateWordpress
 Theme URI: http://underscores.me/

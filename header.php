@@ -61,7 +61,7 @@
                 <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
                 <span class="topButton" id="topButton"></span>
 <!--                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light">--><?php //esc_html_e( 'Menu', 'incarnatewordpress' ); ?><!--</button>-->
-                <div class="d-flex flex-column">
+                <div class="d-flex inc-flex-direction-orientation">
                     <button class="navbar-toggler bg-secondary text-light mr-auto" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="primaryMenuControl">
                         <span class="navbar-toggler-icon"></span>
                     </button>
