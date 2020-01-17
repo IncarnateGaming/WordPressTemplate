@@ -56,19 +56,21 @@
 <!--		</div>-->
         <!-- .site-branding -->
 
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-primary inc-sticky-header">
-            <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
-            <span class="topButton" id="topButton"></span>
-            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'menu-1',
-                'menu_id'        => 'primary-menu',
-            ) );
-            ?>
-            <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
-            <span style="flex:10;"></span>
-        </nav>
+        <div id="site-navigation" class="main-navigation">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-primary inc-sticky-header">
+                <a id="incarnate-logo" class="navbar-brand text-light" href="/"><img src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/assets/images/favicon-white-64x64.png">Incarnate Gaming</a>
+                <span class="topButton" id="topButton"></span>
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" class="button button-light"><?php esc_html_e( 'Menu', 'incarnatewordpress' ); ?></button>
+                <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                ) );
+                ?>
+                <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
+                <span style="flex:10;"></span>
+            </nav>
+        </div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content container">
