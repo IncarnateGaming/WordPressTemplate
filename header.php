@@ -65,13 +65,15 @@
                     <button class="navbar-toggler bg-secondary text-light mr-auto" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="primaryMenuControl">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <?php
-                    wp_nav_menu( array(
-                        'theme_location' => 'menu-1',
-                        'menu_id'        => 'primary-menu',
-                    ) );
-                    ?>
+                    <div class="my-auto">
+                        <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                        ) );
+                        ?>
                     </div>
+                </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
                 <script>
                     function showHideFlex(id,forceType){
@@ -100,9 +102,17 @@
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
-                    if (window.innerWidth <= 992){
-                        showHidePrimarymenu(undefined,'hide');
+                    var incCurrentWidth = 1000;
+                    function changeWidthCheck() {
+                        if (window.innerWidth < 992 && incCurrentWidth >= 992) {
+                            showHidePrimarymenu(undefined, 'hide');
+                        }else if(window.innerWidth >= 992 && incCurrentWidth < 992){
+                            showHidePrimarymenu(undefined, 'show');
+                        }
+                        incCurrentWidth = window.innerWidth;
                     }
+                    changeWidthCheck();
+                    window.addEventListener('resize',changeWidthCheck);
                 </script>
                 <span style="flex:10;"></span>
             </nav>
