@@ -13,7 +13,7 @@ nav div ul li a {
 }
 
 nav div ul li a:visited {
-  color: white;
+  color: #feffe2;
 }
 
 .vertical nav div ul {
@@ -25,6 +25,14 @@ nav div ul li a:visited {
   flex: 0 0 auto;
 }
 
+nav div ul li ul {
+  background-color: #feffe2;
+}
+
+nav div ul li ul a, nav div ul li ul a:hover, nav div ul li ul a:visited {
+  color: #3E044D;
+}
+
 button.menu-toggle {
   border-radius: 0.5rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -33,6 +41,10 @@ button.menu-toggle {
 button.menu-toggle:hover {
   color: #feffe2;
   background-color: #3E044D;
+}
+
+.container {
+  margin-top: 3rem;
 }
 
 /*!
