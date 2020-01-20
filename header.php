@@ -26,8 +26,9 @@
     </script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/hooks.js"></script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/ajax.js"></script>
+    <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/orientation.js"></script>
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
