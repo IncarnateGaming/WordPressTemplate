@@ -76,6 +76,7 @@
                 </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
                 <script>
+                    var incarnateVertical = incarnateVertical !== undefined ? incarnateVertical : true;
                     function showHideFlex(id,forceType){
                         const target = document.getElementById(id);
                         if(forceType === undefined) {
@@ -102,11 +103,11 @@
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
-                    var incCurrentWidth = 1000;
+                    var incCurrentOrientation = incarnateVertical ;
                     function changeWidthCheck() {
-                        if (window.innerWidth < 992 && incCurrentWidth >= 992) {
+                        if (incarnateVertical === false && incCurrentOrientation === true) {
                             showHidePrimarymenu(undefined, 'hide');
-                        }else if(window.innerWidth >= 992 && incCurrentWidth < 992){
+                        }else if(incarnateVertical === true && incCurrentOrientation === false){
                             showHidePrimarymenu(undefined, 'show');
                         }
                         incCurrentWidth = window.innerWidth;
