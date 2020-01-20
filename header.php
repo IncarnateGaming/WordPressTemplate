@@ -110,7 +110,7 @@
                         }else if(incarnateVertical === true && incCurrentOrientation === false){
                             showHidePrimarymenu(undefined, 'show');
                         }
-                        incCurrentWidth = window.innerWidth;
+                        incCurrentOrientation = incarnateVertical;
                     }
                     changeWidthCheck();
                     window.addEventListener('resize',changeWidthCheck);
