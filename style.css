@@ -59,6 +59,10 @@ button.menu-toggle:hover {
   flex-direction: column;
 }
 
+.horizontal .inc-navigation-button {
+  display: none;
+}
+
 /*!
 Theme Name: incarnateWordpress
 Theme URI: http://underscores.me/
