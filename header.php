@@ -103,7 +103,7 @@
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
-                    var incCurrentOrientation = incarnateVertical ;
+                    var incCurrentOrientation = false ;
                     function changeWidthCheck() {
                         if (incarnateVertical === false && incCurrentOrientation === true) {
                             showHidePrimarymenu(undefined, 'hide');
