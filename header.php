@@ -26,7 +26,6 @@
     </script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/hooks.js"></script>
     <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/ajax.js"></script>
-    <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/orientation.js"></script>
 
     <?php wp_head(); ?>
 </head>
@@ -76,6 +75,7 @@
                     </div>
                 </div>
                 <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/navFunctions.js"></script>
+                <script src="https://incarnatesharedassets.s3.us-east-2.amazonaws.com/packs/js/orientation.js"></script>
                 <script>
                     var incarnateVertical = incarnateVertical !== undefined ? incarnateVertical : true;
                     function showHideFlex(id,forceType){
