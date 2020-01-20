@@ -99,18 +99,18 @@
                         target.classList.remove('hidden');
                         target.style.display = 'none';
                     }
+                    var incCurrentOrientation = false ;
                     function showHidePrimarymenu(ev,forceType){
+                        incCurrentOrientation = incarnateVertical;
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
-                    var incCurrentOrientation = false ;
                     function changeWidthCheck() {
-                        if (incarnateVertical === false && incCurrentOrientation === true) {
+                        if (incarnateVertical === true && incCurrentOrientation === false) {
                             showHidePrimarymenu(undefined, 'hide');
-                        }else if(incarnateVertical === true && incCurrentOrientation === false){
+                        }else if(incarnateVertical === false && incCurrentOrientation === true){
                             showHidePrimarymenu(undefined, 'show');
                         }
-                        incCurrentOrientation = incarnateVertical;
                     }
                     changeWidthCheck();
                     window.addEventListener('resize',changeWidthCheck);
