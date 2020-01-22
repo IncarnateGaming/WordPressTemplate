@@ -23,8 +23,8 @@ nav div ul li ul{
 nav div ul li ul a, nav div ul li ul a:hover, nav div ul li ul a:visited{
 	color:map.get($theme-colors,'primary');
 }
-.main-navigation ul li:hover ul{
-	left:unset;
+.main-navigation ul ul{
+	top:inherit;
 }
 button.menu-toggle{
 	border-radius: 0.5rem;
