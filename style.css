@@ -33,6 +33,10 @@ nav div ul li ul a, nav div ul li ul a:hover, nav div ul li ul a:visited {
   color: #3E044D;
 }
 
+.main-navigation ul li:hover ul {
+  left: unset;
+}
+
 button.menu-toggle {
   border-radius: 0.5rem;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
