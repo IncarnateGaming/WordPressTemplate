@@ -101,16 +101,16 @@
                         target.classList.remove('hidden');
                         target.classList.add('d-flex');
                     }
-                    var incCurrentOrientation = true ;
+                    var incCurrentOrientation = undefined ;
                     function showHidePrimarymenu(ev,forceType){
                         incCurrentOrientation = incarnateVertical;
                         showHideFlex('primary-menu',forceType);
                     }
                     document.getElementById('primaryMenuControl').addEventListener('click',showHidePrimarymenu);
                     function changeWidthCheck() {
-                        if (incarnateVertical === true && incCurrentOrientation === false) {
+                        if (incarnateVertical === true && ( incCurrentOrientation === false || incCurrentOrientation === undefined)) {
                             showHidePrimarymenu(undefined, 'hide');
-                        }else if(incarnateVertical === false && incCurrentOrientation === true){
+                        }else if(incarnateVertical === false && ( incCurrentOrientation === true || incCurrentOrientation === undefined)){
                             showHidePrimarymenu(undefined, 'show');
                         }
                     }
