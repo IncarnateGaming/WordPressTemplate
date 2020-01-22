@@ -94,12 +94,12 @@
                         }
                     }
                     function showHideFlexShow(target){
-                        target.classList.add('hidden');
-                        target.classList.remove('d-flex');
-                    }
-                    function showHideFlexHide(target){
                         target.classList.remove('hidden');
                         target.classList.add('d-flex');
+                    }
+                    function showHideFlexHide(target){
+                        target.classList.add('hidden');
+                        target.classList.remove('d-flex');
                     }
                     var incCurrentOrientation = undefined ;
                     function showHidePrimarymenu(ev,forceType){
