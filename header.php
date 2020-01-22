@@ -95,11 +95,11 @@
                     }
                     function showHideFlexShow(target){
                         target.classList.add('hidden');
-                        target.style.display = 'flex';
+                        target.classList.remove('d-flex');
                     }
                     function showHideFlexHide(target){
                         target.classList.remove('hidden');
-                        target.style.display = 'none';
+                        target.classList.add('d-flex');
                     }
                     var incCurrentOrientation = true ;
                     function showHidePrimarymenu(ev,forceType){
