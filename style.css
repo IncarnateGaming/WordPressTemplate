@@ -21,10 +21,6 @@ nav div ul {
   flex-direction: column;
 }
 
-.horizontal nav div ul {
-  flex-direction: row;
-}
-
 nav div ul a {
   flex: 0 0 auto;
 }
@@ -51,18 +47,34 @@ button.menu-toggle:hover {
   margin-top: 4rem;
 }
 
-.horizontal .container {
-  margin-top: 6rem;
-}
-
-.vertical .inc-flex-direction-orientation {
+.inc-flex-direction-orientation {
   flex-direction: column;
 }
 
-.horizontal .inc-navigation-button {
-  display: none;
+nav div ul ul {
+  flex-direction: column;
 }
 
+/*
+Adjust style for pcs
+ */
+@media (orientation: landscape) {
+  nav div ul {
+    flex-direction: row;
+  }
+
+  .container {
+    margin-top: 6rem;
+  }
+
+  .inc-navigation-button {
+    display: none;
+  }
+
+  .inc-flex-direction-orientation {
+    flex-direction: row;
+  }
+}
 /*!
 Theme Name: incarnateWordpress
 Theme URI: http://underscores.me/
