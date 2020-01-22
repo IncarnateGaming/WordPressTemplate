@@ -100,7 +100,7 @@
                         target.classList.remove('hidden');
                         target.style.display = 'none';
                     }
-                    var incCurrentOrientation = false ;
+                    var incCurrentOrientation = true ;
                     function showHidePrimarymenu(ev,forceType){
                         incCurrentOrientation = incarnateVertical;
                         showHideFlex('primary-menu',forceType);
