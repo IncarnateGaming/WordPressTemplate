@@ -114,7 +114,7 @@
                             showHidePrimarymenu(undefined, 'show');
                         }
                     }
-                    if (incarnateVertical === false){
+                    if (window.innerWidth > window.innerHeight){
                         showHidePrimarymenu(undefined, 'show');
                     }
                     window.addEventListener('resize',changeWidthCheck);
