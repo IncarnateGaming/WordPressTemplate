@@ -83,9 +83,9 @@
                         const target = document.getElementById(id);
                         if(forceType === undefined) {
                             if (target.getAttribute('class') !== undefined && target.getAttribute('class').includes('hidden')) {
-                                showHideFlexHide(target);
-                            } else {
                                 showHideFlexShow(target);
+                            } else {
+                                showHideFlexHide(target);
                             }
                         }else if (forceType === 'show'){
                             showHideFlexShow(target);
