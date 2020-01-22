@@ -7,6 +7,10 @@ Custimization scripts
   --dark:#000000;
 }
 
+.hidden {
+  display: none !important;
+}
+
 nav div ul li a {
   color: #feffe2;
   padding-left: 0.5rem;

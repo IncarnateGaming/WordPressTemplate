@@ -3,6 +3,9 @@ Custimization scripts
  */
 @use 'sass:map';
 @import 'D:/IncarnateGaming/Websites2_0/incarnateGamingLLC/public/style/incarnateColors.scss';
+.hidden{
+	display:none!important;
+}
 nav div ul li a{
 	color:map.get($theme-colors,'light');
 	padding-left:0.5rem;
