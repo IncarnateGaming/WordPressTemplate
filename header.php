@@ -70,6 +70,7 @@
                         wp_nav_menu( array(
                             'theme_location' => 'menu-1',
                             'menu_id'        => 'primary-menu',
+                            'menu_class'     => 'hidden',
                         ) );
                         ?>
                     </div>
@@ -113,7 +114,9 @@
                             showHidePrimarymenu(undefined, 'show');
                         }
                     }
-                    changeWidthCheck();
+                    if (incarnateVertical === false){
+                        showHidePrimarymenu(undefined, 'show');
+                    }
                     window.addEventListener('resize',changeWidthCheck);
                 </script>
                 <span style="flex:10;"></span>
