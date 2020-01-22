@@ -23,7 +23,8 @@ nav div ul li ul{
 nav div ul li ul a, nav div ul li ul a:hover, nav div ul li ul a:visited{
 	color:map.get($theme-colors,'primary');
 }
-.main-navigation ul ul{
+//TODO: find way to give functionality of drop down without using this hack to move it up
+.main-navigation ul li ul{
 	top:inherit;
 }
 button.menu-toggle{

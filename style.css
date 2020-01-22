@@ -33,7 +33,7 @@ nav div ul li ul a, nav div ul li ul a:hover, nav div ul li ul a:visited {
   color: #3E044D;
 }
 
-.main-navigation ul ul {
+.main-navigation ul li ul {
   top: inherit;
 }
 
